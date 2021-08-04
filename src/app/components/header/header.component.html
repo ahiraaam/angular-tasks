@@ -1,9 +1,22 @@
 <header>
-    <h1>{{title}}</h1>
-    <app-button 
+    <div class="div__left">
+        <img class="header__icon"src="https://s3.amazonaws.com/storage.wobiz.com/45/45238/images/Large/1524233056_e929b007442129856dec2411d9548ea5.45238.png">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="div__search">
+        <span class="material-icons">
+            search
+        </span>
+        <input type="text" placeholder="Busca tu curso">
+    </div>
+    <div class="div__btns">
+        <button class="btn__header"> Todos Nuestros Cursos </button>
+        <button class="btn__header" id="btn__important"> Únete de forma gratuita</button>
+    </div>
+    <!--<app-button 
         *ngIf="hasRoute('/')"
         color="{{showAddTask ? 'red': 'green'}}" 
         text="{{showAddTask ? 'Close': 'Add'}}"
         (btnClick)='toggleAddTask()'>
-    </app-button>
+    </app-button>!-->
 </header>

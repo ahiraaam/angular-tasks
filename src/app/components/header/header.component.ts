@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  title: string = 'Task Tracke';
+  title: string = 'IdiomSkills';
   showAddTask: boolean = true;
   subscription:  Subscription;
   constructor( private uiService: UiService, private router: Router) {

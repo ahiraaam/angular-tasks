@@ -12,10 +12,16 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CourseCardComponent } from './components/course-card/course-card.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { SingleCourseComponent } from './components/single-course/single-course.component';
 
 const appRoutes: Routes = [
-  {path:'', component: TasksComponent},
-  {path:'about', component: AboutComponent}
+  {path:'', component: CoursesComponent},
+  {path:'about', component: AboutComponent},
+  {path:'course', component: AboutComponent}
 
 ]
 @NgModule({
@@ -27,14 +33,19 @@ const appRoutes: Routes = [
     TaskItemComponent,
     AddTaskComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    CourseCardComponent,
+    CoursesComponent,
+    CarouselComponent,
+    SingleCourseComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes, {enableTracing: true})
+    RouterModule.forRoot(appRoutes, {enableTracing: true}),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

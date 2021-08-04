@@ -1,0 +1,14 @@
+.container_courses{
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+h1{
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: bold;
+    color: rgb(88, 21, 105);;
+}

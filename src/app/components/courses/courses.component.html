@@ -1,0 +1,14 @@
+<!-- <app-task-item 
+    *ngFor="let task of tasks" 
+    [task]="task" 
+    (onDeleteTask)='deleteTask(task)' 
+    (onToggleReminder)='toggleReminder(task)'>
+</app-task-item>!-->
+<app-carousel></app-carousel>
+<h1>TOP 8 DE CURSOS EN JULIO </h1>
+<div class="container_courses">
+    <app-course-card    
+        *ngFor="let course of courses" 
+        [course]="course" 
+    ></app-course-card>
+</div>
